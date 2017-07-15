@@ -6,15 +6,22 @@
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script src="js/jquery.textillate.js"></script>	
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Orbitron" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Orbitron" rel="stylesheet">
 		<link rel = "stylesheet" href = "style.css">
 		<link rel = "stylesheet" href = "animate.css">
 	</head>
 	<body>
 			<section class = "panel intro" >
-				<h1 class = " text-center animated slideInLeft "> Julissa Napoletano </h1>
+			<div align = "center" >
+				<h1 class = "  tlt" data-in-effect = "fadeInLeftBig"> Julissa Napoletano <hr class = "animated rotateIn"> </h1>
+			</div>
+			<div align = "center" class = "row">
+				<h3 class = "text-center">Full Time Student; Coding Coach; Aspiring Software Engineer</h3>	
+			</div>
 			</section>
 			<section class="panel about">
 			  <div align = "center" class="row">
@@ -51,6 +58,11 @@
 							.addTo(controller);
 					}
 				});
+
+			$(function () {
+				$('.tlt').textillate(); 
+			}); 
 		</script>
+
 	</body>
 </html>
