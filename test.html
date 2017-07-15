@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Orbitron" rel="stylesheet">		
+		<link rel = "stylesheet" href = "style.css">
+		<link rel = "stylesheet" href = "animate.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	</head>
+	<body>
+			<section class = "panel one " >
+				<h1 class = " text-center animated slideInLeft "> Julissa Napoletano </h1>
+			</section>
+			<section class="panel two">
+			  <div align = "center" class="row">
+			    <div class="col-sm-6 col-md-6 col-centered " id = "aboutme">
+			    	<img src = "profile.png" class ="profile">
+			      	<h3>Hello World!</h3>
+			      	<p>My name is Julissa Napoletano and I'm a full time student at the College of Staten Island located in New York. I am currently in my senior year pursing a Bachelor's degree in Computer Science with a minor in Business. This summer I am working as a coding coach with the WiTNY program through Cornell Tech.</p>
+			    </div>
+			  </div>
+			</section>
+			<section class = "panel three"> 
+
+			</section>
+		
+		<script>
+			$(function () { // wait for document ready
+					// init
+					var controller = new ScrollMagic.Controller({
+						globalSceneOptions: {
+							triggerHook: 'onLeave'
+						}
+					});
+
+					// get all slides
+					var slides = document.querySelectorAll("section.panel");
+
+					// create scene for every slide
+					for (var i=0; i<slides.length; i++) {
+						new ScrollMagic.Scene({
+								triggerElement: slides[i]
+							})
+							.setPin(slides[i])
+							.addIndicators() // add indicators (requires plugin)
+							.addTo(controller);
+					}
+				});
+		</script>
+	</body>
+</html>
