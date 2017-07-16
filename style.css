@@ -8,46 +8,57 @@ body{
 }
 h1{
 	font-family: Dancing Script;
-	color: #42eef4 !important; 
+	color: #fcfdff !important; 
 	font-size: 100px !important; 
-	padding-top: 15%;
-	padding-bottom: 20%;
+	padding-top: 10%;
+
 	animation-duration: 10s;
 }
 
+#intro{
+	color: #fcfdff; 
+}
 hr{
 	width: 70%;
 }
 
 .profile{
-	max-width: 50%; 
-	padding-top: 20px;
+	max-width: 60%; 
+}
 
+#panel2{
+	padding-top: 50px; 
 }
 
 .panel.intro{
-	background:url(nebula.jpg);
+	background:url(background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.panel.about{
-	background-color: grey; 
+.panel.about{ 
+	background: #d9a7c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .panel.projects{
 	background-color: green; 
 }
 
+#aboutme{
+	padding-top: 50px;
+	
+}
 
-#about_me{
-	background-color: grey;
-
+#skills
+{
+	padding-top: 60px;
+}
 
 }
 .col-centered{
 	float: none;
-    
 }
 
 h3, h2{
