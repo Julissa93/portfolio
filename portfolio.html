@@ -2,12 +2,15 @@
 	<head>
 		<meta charset = "utf-8">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 		<script src="js/jquery.lettering.js"></script>
-		<script src="js/jquery.textillate.js"></script>	
+		<script src="js/jquery.textillate.js"></script>
+		<script src = "WOW/dist/wow.min.js"></script><script>new WOW().init();</script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+		<script src = "typed.js/src/typed.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Orbitron" rel="stylesheet">
@@ -17,26 +20,46 @@
 	<body>
 			<section class = "panel intro" >
 				<div align = "center" >
-					<h1 class = "tlt" data-in-effect = "fadeInLeftBig"> Julissa Napoletano </h1> 
+					<h1 class = "tlt"> Julissa Napoletano </h1>
 					<hr class = "animated zoomIn">
 					<p id = "intro" class = "text-center">Full Time Student  &#x25C6;  Coding Coach  &#x25C6;  Aspiring Software Engineer</p>
-				</div>	
+				</div>
 			</section>
 			<section class="panel about">
-			  <div align = "center" class="row" id = "panel2">
-			    <div class="col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1 " id = "aboutme" >
-			      	<h3>Hello World!</h3>
-			      	<p>My name is Julissa Napoletano and I'm a full time student at the College of Staten Island located in New York. I am currently in my senior year pursing a Bachelor's degree in Computer Science with a minor in Business. This summer I am working as a coding coach with the WiTNY program through Cornell Tech.</p>
-			      	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-			    </div>
-			    <div class = "col-sm-5 col-md-5 " id = "skills" >
-			    	<img src = "me.jpg" class ="img-circle profile" id="profilepic">
-			    </div>
-			  </div>
+				<div class = "container-fluid">
+				  <div class="row" id = "panel2">
+				  <div class = "wow bounceInUp" id = "terminal">
+				    <div id = "aboutme" class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
+					    <div class = "menu">
+					    	<button class = "exit"></button>
+					    	<button class = "minimize"></button>
+					    	<button class = "enlarge"></button>
+					    	<p class = "text-center" id = "terminalheader">About Me</p>
+					      	<pre id="typewriter">
+					      		Last Login: <p id = "date"> </p>
+											<span id = "write1"> </span>
+											<span id = "write2"> </span>
+											<span id = "write3"> </span>
+											<span id = "write4"> </span>
+									</pre>
+						</div>
+					</div>
+					</div>
+					    <!--<div class = "col-sm-6 col-md-6 " id = "skills" >
+					    	<img src = "me.jpg" class ="img-circle profile" id="profilepic">
+					    </div>-->
+				  	</div>
+				  </div>
+			  &nbsp;
 			</section>
-			<section class = "panel projects"> 
-				&nbsp; 
+
+			<section class = "panel projects">
+				&nbsp;
 				<h2 class = "text-center">Projects</h2>
+				&nbsp;
+				<center>
+					<img src = "https://media.giphy.com/media/3o7bueKuHpxliuOl3y/giphy.gif">
+				</center>
 			</section>
 		<script>
 			$(function () { // wait for document ready
@@ -61,9 +84,99 @@
 					}
 				});
 
+				$('.tlt').textillate({
+					in: {effect:'fadeInDown', sync: true}
+				});
 			$(function () {
-				$('.tlt').textillate(); 
-			}); 
+				$('.hello').textillate();
+			});
+
+				function isScrolledIntoView(elem)
+				{
+				    var docViewTop = $(window).scrollTop();
+				    var docViewBottom = docViewTop + $(window).height();
+				    var elemTop = $(elem).offset().top;
+				    var elemBottom = elemTop + $(elem).height();
+				    return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+				}
+
+
+				$(window).scroll(function() {
+				    if(isScrolledIntoView($('#terminal')))
+				    {
+								setTimeout(function(){
+						        $("#write1").typed({
+						            strings: [" julissas-portfolio:~Hello World! My name is Julissa."],
+						            typeSpeed: 30, // typing speed
+						            backDelay: 750, // pause before backspacing
+						            loop: false, // loop on or off (true or false)
+						            loopCount: false, // number of loops, false = infinite
+						            callback: function(){ } // call function after typing is done
+						        });
+						    }, 0);
+
+								setTimeout(function(){
+								        $("#write2").typed({
+								            strings: ["julissas-portfolio:~ I'm a senior studying Computer Science at the College of Staten Island."],
+								            typeSpeed: 30, // typing speed
+								            backDelay: 750, // pause before backspacing
+								            loop: false, // loop on or off (true or false)
+								            loopCount: false, // number of loops, false = infinite
+								            callback: function(){ } // call function after typing is done
+								        });
+								}, 6000);
+
+								setTimeout(function(){
+								        $("#write3").typed({
+								            strings: ["julissas-portfolio:~ Blablablabablablablabalbaalablablaa"],
+								            typeSpeed: 30, // typing speed
+								            backDelay: 750, // pause before backspacing
+								            loop: false, // loop on or off (true or false)
+								            loopCount: false, // number of loops, false = infinite
+								            callback: function(){ } // call function after typing is done
+								        });
+								}, 12000);
+
+/*setTimeout(function(){
+        $(".element2").css("display", "inherit");
+        $(".element2").typed({
+            strings: ["chown gabriel /world"],
+            typeSpeed: 30, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: false, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            callback: function(){ } // call function after typing is done
+        });
+    }, 4000);
+
+setTimeout(function(){
+        $(".element3").css("display", "inherit");
+        $(".element3").typed({
+            strings: ["chmod 700 /world"],
+            typeSpeed: 30, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: false, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            callback: function(){ } // call function after typing is done
+        });
+    }, 6000);
+
+setTimeout(function(){
+        $(".element4").css("display", "inherit");
+        $(".element4").typed({
+            strings: ["chown parents /world/australia"],
+            typeSpeed: 30, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: false, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            callback: function(){ } // call function after typing is done
+        });
+    }, 8000);*/
+
+				    }
+				});
+    		document.getElementById("date").innerHTML = Date();
+
 		</script>
 
 	</body>

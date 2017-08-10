@@ -8,26 +8,31 @@ body{
 }
 h1{
 	font-family: Dancing Script;
-	color: #fcfdff !important; 
-	font-size: 100px !important; 
+	color: #fcfdff !important;
+	font-size: 100px !important;
 	padding-top: 10%;
-
 	animation-duration: 10s;
 }
 
 #intro{
-	color: #fcfdff; 
+	color: #fcfdff;
+	font-family: 'Comfortaa', cursive;
+	font-size: 12pt;
 }
 hr{
 	width: 70%;
 }
 
 .profile{
-	max-width: 60%; 
+	max-width: 60%;
+}
+
+#profilepic{
+	border: 2px solid black;
 }
 
 #panel2{
-	padding-top: 50px; 
+	padding-top: 50px;
 }
 
 .panel.intro{
@@ -36,27 +41,29 @@ hr{
 	background-repeat: no-repeat;
 }
 
-.panel.about{ 
+
+.panel.about{
 	background: #d9a7c7;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .panel.projects{
-	background-color: green; 
+	background: #de6262; /* fallback for old browsers */
+  	background: -webkit-linear-gradient(to right, #de6262, #ffb88c); /* Chrome 10-25, Safari 5.1-6 */
+  	background: linear-gradient(to right, #de6262, #ffb88c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #aboutme{
-	padding-top: 50px;
-	
+	padding-top: 10px;
 }
 
-#skills
-{
-	padding-top: 60px;
+#skills{
+	padding-top: 10px;
 }
 
-}
+
 .col-centered{
 	float: none;
 }
@@ -66,7 +73,121 @@ h3, h2{
 	font-size: 20pt;
 }
 
-p{
-	font-family: 'Comfortaa', cursive;
-	font-size: 12pt;
+
+
+/*.var-highlight{
+	color: #C0AD60;
 }
+.string-highlight{
+	color: #ffffff;
+}*/
+.about{
+	font-family: "Courier New";
+
+}
+ .write{
+ 	background-color: black;
+
+ 	color: #00ff72;
+ }
+#typewriter{
+	text-align: left;
+	height: 50%;
+	width: 100%;
+	font-size: 12pt;
+	padding-left: 10px;
+	margin: 0;
+	background-color: black;
+	font-family: "Courier New";
+	color: #00ff72;
+	white-space: pre-line;
+	&:after{
+		content: "|";
+		animation: blink 500ms linear infinite alternate;
+	}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#terminal{
+	background-color: #e5e7ea;
+	border-radius: 15px;
+
+}
+
+.menu{
+
+	background-color: #dee2e8;
+	border-top-left-radius: 15px ;
+	border-top-right-radius: 15px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+
+}
+
+button, p{
+	display: inline-block;
+	padding-bottom: 0 auto;
+}
+#terminalheader{
+	padding-left: 30%;
+
+	font-size: 12px;
+}
+.exit{
+	border-radius: 70%;
+	margin: 0.5%;
+	height: 15px;
+	width: 15px;
+	background-color: #e8210b;
+	opacity: 0.7;
+}
+
+.minimize{
+	border-radius: 70%;
+	margin: 0.5%;
+	height: 15px;
+	width: 15px;
+	background-color: #ebf235;
+	opacity: 0.7;
+}
+
+.enlarge{
+	border-radius: 70%;
+	margin: 0.5%;
+	height: 15px;
+	width: 15px;
+	background-color:#4aef34;
+	opacity: 0.7;
+}
+/*div
+	{
+		border: 1px solid blue;
+	}
+	a
+	{
+		border: 1px solid red;
+	}
+	p
+	{
+		border: 1px solid green;
+	}
+	span
+	{
+		border: 1px solid yellow;
+	}*/
