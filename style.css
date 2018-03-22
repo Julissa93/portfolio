@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
 .panel {
 	height: 100%;
 	width: 100%;
@@ -6,28 +6,21 @@
 body{
 	overflow-x: hidden;
 }
-h1{
+.panel.intro h1{
 	font-family: Dancing Script;
-	color: #fcfdff !important; 
-	font-size: 100px !important; 
+	color: #fcfdff !important;
+	font-size: 100px !important;
 	padding-top: 10%;
-
 	animation-duration: 10s;
 }
 
-#intro{
-	color: #fcfdff; 
+#subtext{
+	color: #fcfdff;
+	font-family: 'Comfortaa', cursive;
+	font-size: 12pt;
 }
-hr{
+.panel.intro hr{
 	width: 70%;
-}
-
-.profile{
-	max-width: 60%; 
-}
-
-#panel2{
-	padding-top: 50px; 
 }
 
 .panel.intro{
@@ -36,37 +29,106 @@ hr{
 	background-repeat: no-repeat;
 }
 
-.panel.about{ 
-	background: #d9a7c7;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.panel.about{
+	/*background: #d9a7c7;  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #FFFFFF;
+
+}
+
+
+.about h1{
+	font-family: "Dancing Script";
+	color: #3bcee5;
+}
+.about p{
+	color: #000000;
+	font-size: 15px;
+	font-family: "Raleway", sans-serif;
+}
+
+.devicon-cplusplus-line{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-java-plain-wordmark{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-php-plain{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-html5-plain-wordmark{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-css3-plain-wordmark{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-javascript-plain{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-python-plain-wordmark{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-git-plain-wordmark{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-bootstrap-plain-wordmark{
+	font-size: 6rem;
+	color: #000000;
+	padding: 20px;
+}
+.devicon-mysql-plain-wordmark{
+	font-size: 7rem;
+	color: #000000;
+	padding: 20px;
 }
 
 .panel.projects{
-	background-color: green; 
+	/*background: #de6262; /* fallback for old browsers */
+  	/*background: -webkit-linear-gradient(to right, #de6262, #ffb88c); /* Chrome 10-25, Safari 5.1-6 */
+  	/*background: linear-gradient(to right, #de6262, #ffb88c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background-color: #FFFFFF;
 }
 
-#aboutme{
-	padding-top: 50px;
-	
+.panel.projects h1{
+	font-family: Dancing Script;
+	color: #3bcee5;
 }
 
-#skills
-{
-	padding-top: 60px;
+.panel.resume h1{
+	font-family: Dancing Script;
+	color: #3bcee5;
 }
-
-}
-.col-centered{
-	float: none;
-}
-
-h3, h2{
-	font-family: 'Orbitron', sans-serif;
-	font-size: 20pt;
-}
-
-p{
-	font-family: 'Comfortaa', cursive;
-	font-size: 12pt;
-}
+/*div
+	{
+		border: 1px solid blue;
+	}
+	a
+	{
+		border: 1px solid red;
+	}
+	p
+	{
+		border: 1px solid green;
+	}
+	span
+	{
+		border: 1px solid yellow;
+	}*/
