@@ -1,0 +1,6 @@
+[submodule "textillate"]
+	path = textillate
+	url = https://github.com/jschr/textillate.git
+[submodule "Lettering.js"]
+	path = Lettering.js
+	url = https://github.com/davatron5000/Lettering.js.git
