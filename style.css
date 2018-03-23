@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Orbitron');
 
 .panel {
-
 	width: 100%;
 }
 
@@ -26,7 +25,8 @@ body{
 }
 
 .panel.intro hr{
-	width: 70%;
+	width: 70% !important;
+	color: #ffffff !important; 
 }
 
 .panel.intro{
@@ -37,17 +37,16 @@ body{
 
 
 .panel.about{
-	/*background: #d9a7c7;  /* fallback for old browsers */
-	/*background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-	/*background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-color: #FFFFFF;
-
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .about h1{
 	font-family: "Dancing Script";
-	color: #3bcee5;
+	color: #262424;
 }
+
 .about p{
 	color: #000000;
 	font-size: 15px;
@@ -62,20 +61,46 @@ body{
 
 .panel.projects{
 	background-color: #edc2c2;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .panel.projects h1{
-	margin-top: 20px;
 	font-family: Dancing Script;
 	color: #262424;
 }
 
 .card p{
 	font-size: 12px !important;
+	color: inherit;
+	font-family: inherit;
 }
 .panel.resume h1{
 	font-family: Dancing Script;
-	color: #3bcee5;
+	color: #262424;
+}
+
+.panel.resume{
+	background:url(marble.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.contact h1, p{
+	font-family: Dancing Script;
+	color: #fff;
+}
+.panel.contact{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color:#212223;
+}
+.panel.contact a{
+	color: #fff;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 /*div
 	{
