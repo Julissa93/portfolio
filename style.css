@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Orbitron');
+
 .panel {
-	height: 100%;
+
 	width: 100%;
 }
+
 body{
 	overflow-x: hidden;
 }
+
 .panel.intro h1{
 	font-family: Dancing Script;
 	color: #fcfdff !important;
@@ -19,6 +24,7 @@ body{
 	font-family: 'Comfortaa', cursive;
 	font-size: 12pt;
 }
+
 .panel.intro hr{
 	width: 70%;
 }
@@ -38,7 +44,6 @@ body{
 
 }
 
-
 .about h1{
 	font-family: "Dancing Script";
 	color: #3bcee5;
@@ -49,69 +54,25 @@ body{
 	font-family: "Raleway", sans-serif;
 }
 
-.devicon-cplusplus-line{
-	font-size: 6rem;
+.skills i{
+	font-size: 4rem;
 	color: #000000;
-	padding: 20px;
-}
-.devicon-java-plain-wordmark{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-php-plain{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-html5-plain-wordmark{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-css3-plain-wordmark{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-javascript-plain{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-python-plain-wordmark{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-git-plain-wordmark{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-bootstrap-plain-wordmark{
-	font-size: 6rem;
-	color: #000000;
-	padding: 20px;
-}
-.devicon-mysql-plain-wordmark{
-	font-size: 7rem;
-	color: #000000;
-	padding: 20px;
+	padding: 2%;
 }
 
 .panel.projects{
-	/*background: #de6262; /* fallback for old browsers */
-  	/*background: -webkit-linear-gradient(to right, #de6262, #ffb88c); /* Chrome 10-25, Safari 5.1-6 */
-  	/*background: linear-gradient(to right, #de6262, #ffb88c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-		background-color: #FFFFFF;
+	background-color: #edc2c2;
 }
 
 .panel.projects h1{
+	margin-top: 20px;
 	font-family: Dancing Script;
-	color: #3bcee5;
+	color: #262424;
 }
 
+.card p{
+	font-size: 12px !important;
+}
 .panel.resume h1{
 	font-family: Dancing Script;
 	color: #3bcee5;
