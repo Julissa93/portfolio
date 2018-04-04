@@ -26,9 +26,13 @@ body{
 
 .panel.intro hr{
 	width: 70% !important;
-	color: #ffffff !important; 
+	color: #ffffff !important;
 }
 
+.intro-hr{
+	width: 70% !important;
+	color: #ffffff !important;
+}
 .panel.intro{
 	background:url(background.jpg);
 	background-size: cover;
